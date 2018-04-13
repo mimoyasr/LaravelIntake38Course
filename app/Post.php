@@ -11,5 +11,11 @@ class Post extends Model
         'description',
         'user_id',
     ];
+
+    public function user()
+    {
+        //User::class == 'App\User'
+        return $this->belongsTo(User::class);
+    }
     
 }

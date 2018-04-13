@@ -9,7 +9,7 @@
 @foreach ($posts as $post)
 
 
-<li>{{ $post->title }}</li>
+<li>{{ $post->title }}  And The Creator is (Test Creator)</li>
 
 
 @endforeach
