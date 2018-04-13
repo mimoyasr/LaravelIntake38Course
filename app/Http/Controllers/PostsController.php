@@ -32,7 +32,8 @@ class PostsController extends Controller
         // dd($request->all());
         Post::create([
             'title' => $request->title,
-            'description' => $request->description
+            'description' => $request->description,
+            'user_id' => $request->user_id
         ]);
         
        return redirect(route('posts.index')); 
