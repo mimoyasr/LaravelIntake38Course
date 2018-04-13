@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+
 
 class PostsController extends Controller
 {
@@ -10,4 +10,6 @@ class PostsController extends Controller
     {
         return 'hello index';
     }
+
+    
 }
