@@ -8,7 +8,13 @@ class PostsController extends Controller
 {
     public function index()
     {
-        return Post::all();
+         dd(Post::create([
+             'id' => 30,
+             'title' => 'created tile',
+             'description' => 'ay 7aga'
+         ]));
+         dd(Post::all());
+         return 'hello';
     }
 
     
