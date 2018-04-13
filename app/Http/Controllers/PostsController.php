@@ -8,7 +8,7 @@ class PostsController extends Controller
 {
     public function index()
     {
-        return 'hello index';
+        return Post::all();
     }
 
     
