@@ -18,7 +18,8 @@ Route::get('/', function () {
 Route::get(
     'posts',
     'PostsController@index'
-)->name('posts.index');
+)->name('posts.index')
+->middleware('auth');
 
 
 Route::get('posts/create','PostsController@create');
