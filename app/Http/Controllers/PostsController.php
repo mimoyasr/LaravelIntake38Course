@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Post;
 use Illuminate\Http\Request;
 use App\User;
+use App\Http\Requests\StorePostRequest;
+
 
 class PostsController extends Controller
 {
@@ -28,15 +30,8 @@ class PostsController extends Controller
         ]);
     }
 
-    public function store(Request $request)
+    public function store(StorePostRequest $request)
     {
-        $request->validate([
-
-            'title' => 'required',
-            'description' => 'required'
-        ],[
-            'title.required' => 'customized message'
-        ]);
 
         // dd($request->all());
         Post::create([
