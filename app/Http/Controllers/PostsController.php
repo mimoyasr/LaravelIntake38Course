@@ -30,6 +30,14 @@ class PostsController extends Controller
 
     public function store(Request $request)
     {
+        $request->validate([
+
+            'title' => 'required',
+            'description' => 'required'
+        ],[
+            'title.required' => 'customized message'
+        ]);
+
         // dd($request->all());
         Post::create([
             'title' => $request->title,
