@@ -35,4 +35,9 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'facebook' => [
+        'client_id' => env('FACEBOOK_CLIENT_ID','220183265405235'),         // Your FACEBOOK Client ID
+        'client_secret' => env('FACEBOOK_CLIENT_SECRET','29969b59e309c6e11866f1663dd0e6cc'), // Your FACEBOOK Client Secret
+        'redirect' => 'http://test.intake38.dev/login/facebook/callback',
+    ],
 ];
